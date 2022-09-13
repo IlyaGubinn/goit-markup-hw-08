@@ -17,86 +17,96 @@
 </head>
 <body>
         <header>
-          <nav>
-            <a href="./index.html" class="logo-head"><span class="logo-web">Web</span>Studio</a>
-        <ul class="nav-button">
-            <li><a href="./index.html" class="link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
+          <div class="container nav">
+          <nav class="nav">
+            <a href="./index.html" class="logo-head nav"><span class="logo-web">Web</span>Studio</a>
+        <ul class="nav-button nav">
+            <li class="item"><a href="./index.html" class="link current ">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="link ">Портфоліо</a></li>
+            <li class="item"><a href="" class="link nav">Контакти</a></li>
         </ul>
             </nav>
-          <ul >
-              <li><a href="mailto:info@devstudio.com" class="nav-link head">info@devstudio.com</a></li>
-              <li><a href="tel:+380961111111" class="nav-link head">+38 096 111 11 11</a></li>
-        </ul>
+          <ul class="nav link">
+              <li><a href="mailto:info@devstudio.com" class="nav-link head ">info@devstudio.com</a></li>
+              <li><a href="tel:+380961111111" class="nav-link head tel ">+38 096 111 11 11</a></li>
+        </ul></div>
         </header>
     <main> 
-       <!-- hero section -->
-      <section class="section-hero"><h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
+       <!-- hero section --> 
+      <section class="section-hero">
+        <div class="container hero">
+        <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero-button button" >Замовити послугу</button>
+      </div>
       </section>
         <!--  feature -->
-      <section><h2 class="hidden">Особливості</h2>
-        <ul>
-          <li>
+      <section class="section"> <div class="container ">
+        <h2 class="hidden">Особливості</h2> 
+        <ul class="feuter">
+          <li class="feuter-box">
             <h3 class="feature-name">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="feature-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
           </li>
-          <li>
+          <li class="feuter-box">
             <h3 class="feature-name">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="feature-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
           </li>
-          <li>
+          <li class="feuter-box">
             <h3 class="feature-name">ПЛАНУВАННЯ</h3>
             <p class="feature-text">Так само консультація з широким активом значною мірою зумовлює.</p>
           </li>
-          <li>
+          <li class="feuter-box">
             <h3 class="feature-name">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="feature-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </li>
         </ul>
+      </div>
 
       </section>
         <!-- work -->
-      <section><h2 class="title-name">Чим мы займаємося</h2>
-        <ul>
+      <section class="section"> <div class="container">
+        <h2 class="title-name work-name">Чим мы займаємося</h2>
+        <ul class="img-work">
           <li>
-            <img src="./images/htmlcoding.jpg" alt="верстка" width="370">  
+            <img src="./images/htmlcoding.jpg" alt="верстка" width="370" class="img">  
           </li>
           <li>
-            <img src="./images/mockup.jpg" alt="мокап" width="370">
+            <img src="./images/mockup.jpg" alt="мокап" width="370" class="img">
           </li>
           <li>
-            <img src="./images/design.jpg" alt="палетка кольору" width="370">
+            <img src="./images/design.jpg" alt="палетка кольору" width="370" class="img last">
           </li>
         </ul>
+      </div>
 
       </section>
        <!-- team -->
-      <section class="section-team"><h2 class="title-name">Наша команда</h2>
-        <ul>
-          <li>
+      <section class="section-team section">
+        <div class="container">
+        <h2 class="title-name">Наша команда</h2>
+        <ul class="team-box">
+          <li class="item-card">
             <img src="./images/igor-photo.jpg" alt="Ігор" width="270">
             <h3 class="name">Ігор Дем'яненко</h3>
             <p class="job-title">Product Designer</p>
           </li>
-          <li><img src="./images/olha-photo.jpg" alt="Ольга" width="270">
+          <li class="item-card"><img src="./images/olha-photo.jpg" alt="Ольга" width="270">
             <h3 class="name">Ольга Рєпіна</h3>
             <p class="job-title">Frontend Developer</p>
           </li>
-          <li><img src="./images/mikolay-photo.jpg" alt="Микола" width="270">
+          <li class="item-card"><img src="./images/mikolay-photo.jpg" alt="Микола" width="270">
             <h3 class="name">Микола Тарасов</h3>
             <p class="job-title">Marketing</p>
           </li>
-          <li><img src="./images/mihail-photo.jpg" alt="Михайло" width="270">
+          <li class="item-card"><img src="./images/mihail-photo.jpg" alt="Михайло" width="270">
             <h3 class="name">Михайло Єрмаков</h3>
             <p class="job-title">UI Designer</p>
           </li>
-        </ul>
+        </ul></div>
 
       </section>
     </main>
-    <footer>
+    <footer><div class="container footer-content">
       <a href="./index.html" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
       <address>
         <ul>
@@ -105,6 +115,7 @@
           <li ><a href="tel:+380961111111" class="nav-link footer-link">+38 096 111 11 11</a></li>
         </ul>
        </address>
+      </div>
     </footer>
 
     
