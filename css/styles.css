@@ -224,6 +224,16 @@ img{display: block;
 .feuter-box:first-child{
     margin-left: 0;
 }
+.feuter-box::before{
+    content:"" ;
+    display: block;
+    height: 120px;
+    background-color:var(--background-button);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
 
 .feature-name{
 margin-bottom: 10px;
