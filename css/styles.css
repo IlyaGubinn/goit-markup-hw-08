@@ -1,9 +1,12 @@
-:root{
+ :root{
     --background-color:#ffffff;
     --background-hero-color:#2F303A;
     --team-background-color:#F5F4FA;
     --footer-background-color:#2F303A;
     --background-button:#F5F4FA ;
+    --background-hero-hover:#188CE8;
+
+    --social-linl-color:#AFB1B8;
     --primary-text-color:#000000;
     --hero-text-color:#FFFFFF;
     --title-text-color:#000000;
@@ -129,10 +132,11 @@ img{display: block;
     color: var(--accent-color);
 }
 .nav.link{
+    
     margin-left: auto;
 }
-.nav-link.head{
-    
+.nav-link.head{display: flex;
+    align-items: center;
     color:var(--nav-link-color);
     font-weight: 500;
         font-size: 14px;
@@ -143,11 +147,30 @@ img{display: block;
     margin-left:50px ;
 }
 
+.header-icon.telh{
+   width: 10px;
+   height: 16px; 
+}
+.header-icon.conv{
+    width: 16px;
+    height: 12px;
+}
+.header-icon{
+
+    margin-right: 10px;
+    fill:currentColor;
+}
+
+
+
 .nav-link.head:hover ,
 .nav-link.head:focus,
 .footer-link:hover,
-.footer-link:focus {
+.footer-link:focus
+
+{
     color: var(--accent-color);
+  fill: var(--accent-color);
 }
 /* hero */
 .container.hero{
@@ -212,6 +235,9 @@ img{display: block;
     text-align: center;
     letter-spacing: 0.06em;
 }
+.hero-button:hover,.hero-button:focus{
+    background-color:var(--background-hero-hover) ;
+}
 /* section */
 /* feuter */
 .feuter {
@@ -224,15 +250,13 @@ img{display: block;
 .feuter-box:first-child{
     margin-left: 0;
 }
-.feuter-box::before{
-    content:"" ;
-    display: block;
+
+.feuter-icon{
+    padding:25px 100px;
     height: 120px;
-    background-color:var(--background-button);
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 4px;
-    margin-bottom: 30px;
+background-color: var(--background-button);
+border-radius: 4px;
+margin-bottom: 30px;
 }
 
 .feature-name{
@@ -298,6 +322,32 @@ border-radius: 0px 0px 4px 4px;
     margin-bottom: 10px;
 }
 
+.link-team{
+    display: flex;
+    margin: 0 32px;
+}
+.list-link:nth-child(n+2) {
+    margin-left: 10px;
+}
+
+.link-team-list:hover,
+.link-team-list:focus
+ {
+    background-color: var(--accent-color);
+    fill:var(--button-hover-color);
+}
+.link-team-list{
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--social-linl-color);
+    padding:12px;
+    margin:0px;
+    
+    
+}
+
     
 
 .name{
@@ -311,6 +361,7 @@ border-radius: 0px 0px 4px 4px;
 .job-title{
         font-size: 16px;
         line-height: 1.18;
+        margin-bottom:16px ;
         
 }
 
