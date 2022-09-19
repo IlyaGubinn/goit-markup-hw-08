@@ -447,6 +447,37 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.85;
 }
 
+/* client */
+.client{
+    display: flex;
+
+}
+.client-link {
+      
+    fill: var(--social-linl-color);  
+    padding:16px 32px ;
+    width:170px;
+    height:92px ;
+    border: 1px solid var(--social-linl-color);
+    border-radius: 4px;
+    text-align: center;
+
+
+}
+
+
+.client-link:focus,
+.client-link:hover {
+fill: var(--accent-color);
+border-color: var(--accent-color);
+}
+
+.client-list:nth-child(n+2)
+{margin-left:30px;}
+.client-link{
+    display: block;
+    
+}
 
 
 
