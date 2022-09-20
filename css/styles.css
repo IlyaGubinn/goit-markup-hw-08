@@ -5,6 +5,7 @@
     --footer-background-color:#2F303A;
     --background-button:#F5F4FA ;
     --background-hero-hover:#188CE8;
+    --background-color-social:rgba(255, 255, 255, 0.1);
 
     --social-linl-color:#AFB1B8;
     --primary-text-color:#000000;
@@ -417,6 +418,10 @@ border-radius: 0px 0px 4px 4px;
 
 }
 
+.item-prtf:hover,       
+.item-prtf:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .item-prtf:nth-child(3n){
     margin-right: 0;
 }
@@ -541,7 +546,7 @@ display: flex;
     margin-left: 70px;
 }
 .link-team-list.ftr{
-    background-color:rgba(255, 255, 255, 0.1);
+    background-color:var(--background-color-social);
     fill: var(--adress-color);
 }
 
