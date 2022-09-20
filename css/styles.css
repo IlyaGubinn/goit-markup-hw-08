@@ -411,6 +411,7 @@ border-radius: 0px 0px 4px 4px;
 
 .item-prtf{
     flex-basis: calc((100% - 60px) / 3 );
+    
 
 }
 
@@ -483,9 +484,11 @@ border-color: var(--accent-color);
 
 
 /* footer */
-footer{padding-top: 60px;
+footer{ 
+    padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--footer-background-color);
+    
 }
 
 .logo-footer{
@@ -514,8 +517,27 @@ footer{padding-top: 60px;
 .footer-adress li:last-child{
     margin-bottom: 0;
 }
+.footer-social,.footer-title{
+display: flex;
+}
+.footer-title{
+    display: inline-block;
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: var(--adress-color);
+}
 
-
+.footer{
+    display: flex;
+    align-items: baseline;
+}
+.footer-social-group{
+    margin-left: 70px;
+}
 
     /* other */
 
