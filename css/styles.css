@@ -6,6 +6,7 @@
     --background-button:#F5F4FA ;
     --background-hero-hover:#188CE8;
     --background-color-social:rgba(255, 255, 255, 0.1);
+    --background-color-img-work:rgba(47, 48, 58, 0.8);
 
     --social-linl-color:#AFB1B8;
     --primary-text-color:#000000;
@@ -117,7 +118,12 @@ img{display: block;
     margin-right: 0;
 }
 
-.nav-button .link{
+.link{
+     position: relative;
+    
+    padding-top:32px ;
+    padding-bottom: 32px;
+
     color: var(--nav-button-color);
     font-weight: 500;
     font-size: 14px;
@@ -125,6 +131,21 @@ img{display: block;
     letter-spacing: 0.02em;
 
 }
+.link.current::after{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+
+    content: "";
+
+    width: 100%;
+    height: 4px;
+background-color:var(--accent-color) ;
+border-radius: 2px;
+
+}
+
 .nav-button .link.current {
     color: var(--accent-color);
 }
@@ -288,11 +309,38 @@ margin-bottom: 10px;
 }
    
 .img{
+    position: relative;
     margin-right: 30px;
 }
 .img.last{
     margin-right: 0;
 }
+
+.text-work{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+ font-size: 14px;
+ line-height: 1.14;
+ 
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+  color: var(--background-color);
+  
+     background-color: var(--background-color-img-work);
+    width: 100%;
+    height: 25%;
+    
+
+    
+}
+
+
+
 
 .work-name{
     margin-bottom: 50px;
