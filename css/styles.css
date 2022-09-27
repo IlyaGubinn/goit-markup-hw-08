@@ -135,14 +135,22 @@ img{display: block;
 
 
     .button-close{
+        display: flex;
         position: absolute;
-        top:0;
-        right: 0;
-        margin-top: 8px;
-        margin-right: 8px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+
+        top:8px;
+        right: 8px;
+        
+        width: 30px;
+        height: 30px;
+
 
         background-color: var(--background-color);
-        border: none;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
         cursor: pointer;
     }
 
