@@ -794,6 +794,70 @@ display: flex;
 .link-team-list.ftr{
     background-color:var(--background-color-social);
     fill: var(--adress-color);
+
+
+}
+
+.footer-form {
+    margin-left: auto;
+}
+.lable-position {
+    display: flex;
+}
+.form-title{
+margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--adress-color);
+}
+.footer-input{
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid var(--footer-form-border);
+    border-radius: 4px;
+    background-color: inherit;
+    color: var(--secondary-title-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+}
+
+
+.footer-sub-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    background-color: var(--accent-color);
+    color: var(--adress-color);
+    border-radius: 4px;
+    border: none;
+    fill: var(--adress-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.footer-sub-button:hover, .footer-sub-button:focus {
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    background-color: var(--background-hero-hover);
+}
+
+.icon-send {
+    margin-left: 10px;
 }
 
     /* other */
