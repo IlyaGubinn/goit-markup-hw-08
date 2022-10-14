@@ -1,0 +1,40 @@
+.client {
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.client__link {
+    display: block;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
+
+
+
+    fill: $social-linl-color;
+    border: 1px solid $social-linl-color;
+    border-radius: 4px;
+
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+
+    &:focus,&:hover {
+        fill: $accent-color;
+            border-color: $accent-color;
+    }
+
+}
+
+
+.client__list:nth-child(n+2) {
+    margin-left: 30px;
+}

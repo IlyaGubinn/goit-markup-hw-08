@@ -1,0 +1,166 @@
+.button--close {
+    display: flex;
+    position: absolute;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+
+
+    background-color: $background-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover , &:focus{
+        fill: $accent-color;
+    }
+}
+
+
+.modal__button {
+    margin-top: 30px;
+    padding: 0;
+
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    background-color: $accent-color;
+    color: $hero-text-color;
+    border-radius: 4px;
+    border: none;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+
+
+    &:hover , &:focus{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            background-color: $background-hero-hover;
+
+    }
+
+
+
+
+
+    &--position{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+}
+
+.hero__button {
+    margin-top: 30px;
+    padding: 10px 32px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    background-color: $accent-color;
+    color: $hero-text-color;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+        background-color: $background-hero-hover;
+    }
+
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+
+    &--list{
+        margin-right: 8px;
+
+    }
+
+    &--listi:last-child{
+        margin-right: 0;
+    }
+
+}
+
+
+
+.button--filters {
+
+    padding: 6px 22px;
+
+
+    background-color: $background-button;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    border: none;
+    border-radius: 4px;
+
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover, &:focus {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
+        background-color: $accent-color;
+        color: $button-hover-color;}
+}
+
+
+.form--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    background-color: $accent-color;
+    color: $adress-color;
+    border-radius: 4px;
+    border: none;
+    fill: $adress-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+
+
+    &:hover, &:focus{
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+        background-color: $background-hero-hover;
+    }
+
+
+
+}
