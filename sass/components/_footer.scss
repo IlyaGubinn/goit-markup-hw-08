@@ -113,7 +113,7 @@
     border: 1px solid $footer-form-border;
     border-radius: 4px;
     background-color: inherit;
-    color: $footer-background-color;
+    color:$adress-color ;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus{
