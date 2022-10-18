@@ -8,10 +8,26 @@
 
 
 .logo--head {
+    display: flex;
+    color: $primary-text-color;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width :768px){
+        margin-right: 87px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+
+
+    }
+
+
+    @media screen and (min-width :1200px){
     margin-right: 93px;
     padding-top: 25px;
     padding-bottom: 25px;
-    color: $primary-text-color;
+}
+    
 }
 
 

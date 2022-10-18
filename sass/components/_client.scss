@@ -1,7 +1,8 @@
 .client {
     display: flex;
-    margin-top: 50px;
-
+    flex-wrap: wrap;
+    margin: -15px;
+    
 }
 
 .client__link {
@@ -10,9 +11,13 @@
 
     justify-content: center;
     align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 52px;
+    padding-right: 52px;
+    
 
-    width: 170px;
-    height: 92px;
+    
 
 
 
@@ -25,6 +30,20 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
+    @media  screen and (min-width:768px) 
+    {padding-left: 60px;
+        padding-right: 60px;
+        
+    }
+        @media screen and (min-width:1200px) {
+            padding-left: 32px;
+            padding-right: 32px;
+    
+        }
+
+   
+
+
 
 
     &:focus,&:hover {
@@ -33,8 +52,25 @@
     }
 
 }
-
-
-.client__list:nth-child(n+2) {
-    margin-left: 30px;
+.client__list{
+    @media screen and (max-width: 767px) {
+    
+            width: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+    
+        }
+    
+        @media screen and (min-width: 768px) {
+    
+            width: calc((100% - 3 * 30px) / 3);
+            margin: 15px;
+    
+    
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 6 * 30px) / 6)
+        }
 }
+
+
