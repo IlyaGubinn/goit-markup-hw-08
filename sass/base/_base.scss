@@ -1,15 +1,21 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: $background-color;
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
+    &.is-open {
+        overflow: hidden;
+    }
+    
+
 
 
 }
+
 
 h1,
 h2,
