@@ -293,9 +293,13 @@ img {
   font-size: 14px;
   line-height: 1.71;
 }
-@media screen and (max-width: 1199px) {
-  .adress {
-    text-align: center;
+
+.adress__group {
+  text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .adress__group {
+    margin-left: 76px;
   }
 }
 
@@ -329,11 +333,19 @@ img {
             justify-content: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__social--group {
+    text-align: center;
     margin-left: auto;
+    margin-right: 89px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__social--group {
+    margin-left: 70px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__social--group {
     margin-left: 70px;
@@ -711,6 +723,7 @@ img {
 }
 .hero--overlay {
   max-width: 1600px;
+  max-height: 100%;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgr/hero-480.jpg);
@@ -1357,7 +1370,14 @@ img {
 }
 
 .card__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -1375,6 +1395,25 @@ img {
 .card__thumb {
   position: relative;
   overflow: hidden;
+}
+
+.prtf__photo {
+  max-width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .prtf__photo {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .prtf__photo {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prtf__photo {
+    width: 370px;
+  }
 }
 
 .card__thumb--descrition {
@@ -1417,6 +1456,8 @@ img {
 }
 
 .card__content {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   padding: 20px 24px;
   border-top: none;
   border-bottom: 1px solid #EEEEEE;
@@ -1452,6 +1493,7 @@ img {
           justify-content: center;
   margin: 0;
   padding: 0;
+  fill: #000000;
   background-color: #ffffff;
   cursor: pointer;
   border: none;
