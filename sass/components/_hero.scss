@@ -1,21 +1,15 @@
 .hero {
-    max-width: 1600px;
-    
-    margin-left: auto;
-    margin-right: auto;
-    
-
-    background-color: $background-hero-color;
-
    
-
     &--container {
             text-align: center;
             margin-left: auto;
             margin-right: auto;
-            padding-top: 118px;
-            padding-bottom: 118px;
             
+          
+            @media screen and (min-width: 480px){
+                padding-top: 118px;
+            padding-bottom: 118px;
+            }
 
             @media screen and (min-width :1200px) {
                     padding-top: 200px;
@@ -28,11 +22,14 @@
 
     &--overlay {
         max-width: 1600px;
-        max-height: 100% ;
         
-       
         margin-left: auto;
         margin-right: auto;
+
+        text-align: center;
+        background-color: $background-hero-color;
+
+
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgr/hero-480.jpg);
     
         background-position: center;
@@ -46,7 +43,7 @@
             }
         @media screen and (min-width: 768px) {
   
-            height: 400px;
+            
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgr/hero-768.jpg);
         
                 @media (min-device-pixel-ratio: 2),
@@ -72,17 +69,32 @@
 
 
 .hero__text {
-    max-width: 800px;
+
+
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 
-
-    color: $hero-text-color;
+    text-align: center;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $hero-text-color;
+    @media screen and (max-width: 1999px) {
+        max-width: 360px;
+        font-size: 26px;
+        line-height: 1.62;
+    }
+     @media screen and (min-width: 1200px) {
+        max-width: 692px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 
     
-    letter-spacing: 0.06em;
-    text-transform: uppercase
+    
+
+
+    
+    
 }

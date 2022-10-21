@@ -702,18 +702,16 @@ img {
   background-color: #188CE8;
 }
 
-.hero {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #2F303A;
-}
 .hero--container {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
+}
+@media screen and (min-width: 480px) {
+  .hero--container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero--container {
@@ -723,9 +721,10 @@ img {
 }
 .hero--overlay {
   max-width: 1600px;
-  max-height: 100%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  background-color: #2F303A;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgr/hero-480.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgr/hero-480.jpg);
   background-position: center;
@@ -740,7 +739,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero--overlay {
-    height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgr/hero-768.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgr/hero-768.jpg);
   }
@@ -766,15 +764,28 @@ img {
 }
 
 .hero__text {
-  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  color: #FFFFFF;
+  margin-bottom: 30px;
+  text-align: center;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 1999px) {
+  .hero__text {
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    max-width: 692px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1025,10 +1036,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 52px;
-  padding-right: 52px;
+  max-width: 210px;
+  height: 92px;
   fill: #AFB1B8;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -1041,14 +1050,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .client__link {
-    padding-left: 60px;
-    padding-right: 60px;
+    max-width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
   .client__link {
-    padding-left: 32px;
-    padding-right: 32px;
+    width: 170px;
   }
 }
 .client__link:focus, .client__link:hover {

@@ -9,12 +9,16 @@
     display: block;
     display: flex;
 
+
     justify-content: center;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 52px;
-    padding-right: 52px;
+    max-width: 210px;
+    height: 92px;
+
+    
+    
+   
+    
     
 
     
@@ -30,14 +34,17 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
+
+   
     @media  screen and (min-width:768px) 
-    {padding-left: 60px;
-        padding-right: 60px;
+       {  
+        
+    max-width: 226px;
+
         
     }
         @media screen and (min-width:1200px) {
-            padding-left: 32px;
-            padding-right: 32px;
+            width: 170px;
     
         }
 
@@ -57,6 +64,7 @@
     
             width: calc((100% - 2 * 30px) / 2);
             margin: 15px;
+
     
         }
     
